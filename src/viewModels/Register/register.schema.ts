@@ -7,3 +7,5 @@ export const registerSchema= yup.object({
     confirmPassword: yup.string().required('Senha é obrigatória').oneOf([yup.ref('password'), 'Senhas não coincidem']),
     phone: yup.string().required('Telefone é obrigatório').matches(/^\d(11)$/, 'Telefone deve ter 11 dígitos (DDD + número)')
 })
+
+export type RegisterFormData = yup.InferType<typeof registerSchema>

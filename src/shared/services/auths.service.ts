@@ -5,4 +5,4 @@ export const register = async(userData: RegisterHttpParams) => {
     const { data } = await marketPlaceApiClient.post<RegisterHttpResponse>('/auth/register', userData) 
 
     return data
-}
+} 

@@ -1,9 +1,5 @@
-import { Text, View } from "react-native";
+import RegisterView from "../viewModels/Register/Register.view";
 
 export default function Register() {
-    return(
-        <View className="flex-1 items-center justify-center">
-            <Text>Registro</Text>
-        </View>
-    )
+    return <RegisterView />
 }
